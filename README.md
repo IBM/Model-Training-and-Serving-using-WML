@@ -2,9 +2,15 @@
 
 ## Preequisite
 
-Install Bluemix CLI and Machine Learning Plugin
+Install [Bluemix CLI](https://console.bluemix.net/docs/cli/reference/bluemix_cli/get_started.html#getting-started) and [Machine Learning Plugin]()
 
-## Provision your WML instance, and setup CLIs
+``` shell
+bx plugin install ml_cli_plugin_osx
+bx target -o ORG -s SPACE
+``` 
+
+## Provision your WML instance
+
 
 ### 1. Create an instance of WML service and associated key using BX command line
 
@@ -18,10 +24,9 @@ bx cf create-service-key Animesh-WML Animesh-WML-Key
 bx cf service-key Animesh-WML Animesh-WML-Key
 ```
 
-### 3. Install the Blumix bx cli and Machine learning plugin, and set it up with your creds obtained in step 2.
+### 3. Set the Machine Learning plugin it up with your creds obtained in step 2.
 
 ``` shell
-    bx plugin install ml_cli_plugin_osx
     export ML_INSTANCE=11111111-aaaa-2222-bbbb-333333333333
     export ML_USERNAME=44444444-cccc-5555-dddd-666666666666
     export ML_PASSWORD=77777777-eeee-8888-ffff-999999999999
@@ -34,13 +39,13 @@ bx cf service-key Animesh-WML Animesh-WML-Key
 We pre upload training data  in our own object storage here, so users dont need to do this
 ``` 
 
-## Package the Model graphs in zip
+## Create Model graphs Zip
 
 ``` shell
 Like before, we prepackage it and keep it in object store, and ask users to download it to their machine
 ``` 
 
-## Create a Training Manifest File
+## Create a Training Run Manifest File
 
 ``` shell
 Like before, we pre create it and keep it in object store, and ask users to download it to their machine
