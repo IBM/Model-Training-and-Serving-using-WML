@@ -32,6 +32,17 @@ bx cf service-key Animesh-WML Animesh-WML-Key
     export ML_PASSWORD=77777777-eeee-8888-ffff-999999999999
     export ML_ENV=<url from credentials>
  ```
+### 4. Test it
+
+``` shell
+AnimeshMacBook:~ animeshsingh$ bx ml list training-runs
+Fetching the list of training runs ...
+SI No   Name   guid   status   framework   version   submitted-at   
+
+0 records found.
+OK
+List all training-runs successful
+ ```
  
 ## Provision an Object Storage Instance, and upload training data
 
