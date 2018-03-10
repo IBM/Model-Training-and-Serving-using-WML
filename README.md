@@ -57,19 +57,15 @@ aws --endpoint-url=http://s3-api.us-geo.objectstorage.softlayer.net s3 mb <train
 aws --endpoint-url=http://s3-api.us-geo.objectstorage.softlayer.net s3 mb <trainingResultBucket>
 
 aws --endpoint-url=http://s3-api.us-geo.objectstorage.softlayer.net s3 cp t10k-labels-idx1-ubyte.gz s3://test-data-animesh/
-upload: ./t10k-labels-idx1-ubyte.gz to s3://test-data-animesh/t10k-labels-idx1-ubyte.gz
 aws --endpoint-url=http://s3-api.us-geo.objectstorage.softlayer.net s3 cp train-labels-idx1-ubyte.gz s3://test-data-animesh/
-upload: ./train-labels-idx1-ubyte.gz to s3://test-data-animesh/train-labels-idx1-ubyte.gz
 aws --endpoint-url=http://s3-api.us-geo.objectstorage.softlayer.net s3 cp t10k-images-idx3-ubyte.gz s3://test-data-animesh/
-upload: ./t10k-images-idx3-ubyte.gz to s3://test-data-animesh/t10k-images-idx3-ubyte.gz
 aws --endpoint-url=http://s3-api.us-geo.objectstorage.softlayer.net s3 cp train-images-idx3-ubyte.gz s3://test-data-animesh/
-upload: ./train-images-idx3-ubyte.gz to s3://test-data-animesh/train-images-idx3-ubyte.gz
+
 aws --endpoint-url=http://s3-api.us-geo.objectstorage.softlayer.net s3 ls s3://test-data-animesh
 2018-03-10 00:14:49    1648877 t10k-images-idx3-ubyte.gz
 2018-03-10 00:13:12       4542 t10k-labels-idx1-ubyte.gz
 2018-03-10 00:15:22    9912422 train-images-idx3-ubyte.gz
 2018-03-10 00:14:31      28881 train-labels-idx1-ubyte.gz
-
 ``` 
 
 ## Create Model graphs Zip
