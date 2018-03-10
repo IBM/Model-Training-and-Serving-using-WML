@@ -47,7 +47,12 @@ List all training-runs successful
 ## Provision an Object Storage Instance, and upload training data
 
 ``` shell
-We pre upload training data  in our own object storage here, so users dont need to do this
+export AWS_ACCESS_KEY_ID=test
+export AWS_SECRET_ACCESS_KEY=test
+
+# Create your training data and result buckets
+aws --endpoint-url=http://s3-api.us-geo.objectstorage.softlayer.net s3 mb <trainingDataBucket>
+aws --endpoint-url=http://s3-api.us-geo.objectstorage.softlayer.net s3 mb <trainingResultBucket>
 ``` 
 
 ## Create Model graphs Zip
