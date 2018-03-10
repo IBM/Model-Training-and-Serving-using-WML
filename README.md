@@ -46,6 +46,8 @@ List all training-runs successful
  
 ## Provision an Object Storage Instance, and upload training data
 
+Provsion an [Object Storage instance](https://console.bluemix.net/catalog/services/cloud-object-storage), and then setup your command line
+
 ``` shell
 export AWS_ACCESS_KEY_ID=test
 export AWS_SECRET_ACCESS_KEY=test
