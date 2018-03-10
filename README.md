@@ -27,10 +27,10 @@ bx cf service-key Animesh-WML Animesh-WML-Key
 ### 3. Set the Machine Learning plugin it up with your creds obtained in step 2.
 
 ``` shell
-    export ML_INSTANCE=11111111-aaaa-2222-bbbb-333333333333
-    export ML_USERNAME=44444444-cccc-5555-dddd-666666666666
-    export ML_PASSWORD=77777777-eeee-8888-ffff-999999999999
-    export ML_ENV=<url from credentials>
+export ML_INSTANCE=11111111-aaaa-2222-bbbb-333333333333
+export ML_USERNAME=44444444-cccc-5555-dddd-666666666666
+export ML_PASSWORD=77777777-eeee-8888-ffff-999999999999
+export ML_ENV=<url from credentials>
  ```
 ### 4. Test it
 
