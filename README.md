@@ -24,7 +24,7 @@ bx cf create-service-key Animesh-WML Animesh-WML-Key
 bx cf service-key Animesh-WML Animesh-WML-Key
 ```
 
-### 1.3 Set the Machine Learning plugin it up with your creds obtained in step 2.
+### 1.3 Set the Machine Learning plugin it up with your creds obtained in step 2
 
 ``` shell
 export ML_INSTANCE=11111111-aaaa-2222-bbbb-333333333333
@@ -46,7 +46,7 @@ List all training-runs successful
  
 ## Provision an Object Storage Instance, and upload training data
 
-Provsion an [Object Storage instance](https://console.bluemix.net/catalog/services/cloud-object-storage), and then setup your command line
+Provision an [Object Storage instance](https://console.bluemix.net/catalog/services/cloud-object-storage), and then setup your command line
 
 ``` shell
 export AWS_ACCESS_KEY_ID=test
