@@ -207,7 +207,7 @@ bx ml list models
 
 ``` 
 
-Deploy stored model to WML
+### 5.2 Deploy stored model to WML
 
 
 ``` shell
@@ -227,7 +227,7 @@ Deploy model successful
 
 ```
 
-Score the deployed model. 
+### 5.3 Score the deployed model. 
 
 To score the model, the scoring_payload.json file must use the following format:
 ``` shell
