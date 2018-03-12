@@ -190,25 +190,7 @@ aws --endpoint-url=<ibm-cos-endpoint-url> --profile ibm_cos s3 cp s3://test_data
 
 ## 5. Deploy and Serve Models
 
-### 5.1 Store trained model to WML repository
-
-Store trained model to WML repository
-
-
-``` shell
-bx ml store training-runs training-HrlzIHskg
-
-```
-
-List the models stored in WML Repository
-
-
-``` shell
-bx ml list models
-
-``` 
-
-### 5.2 Deploy stored model to WML
+### 5.1 Deploy stored model to WML
 
 
 ``` shell
@@ -228,7 +210,7 @@ Deploy model successful
 
 ```
 
-### 5.3 Score the deployed model. 
+### 5.2 Score the deployed model. 
 
 To score the model, the scoring_payload.json file must use the following format:
 ``` shell
