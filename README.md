@@ -82,7 +82,7 @@ zip tf-model.zip convolutional_network.py input_data.py
 
 ### 3.2 Create a Training Run Manifest File
 
-Create a Training Run Manifest File. Make sure to point to your Object Storage instance
+Create a Training Run Manifest File. Please use the sample tf-train.yml from this repository. Make sure to point to your Object Storage instance
 ``` shell
 model_definition:
   name: tf-mnist-showtest1
