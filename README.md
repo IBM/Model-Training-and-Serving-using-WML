@@ -71,10 +71,9 @@ aws --endpoint-url=http://s3-api.us-geo.objectstorage.softlayer.net s3 ls s3://t
 ## 3. Create your Model Training Run
 ### 3.1 Create Deep Learning Model program and put them in a zip file
 
-You must create a deep learning tensorflow program to train a model. For this, you must use the input_data.py and convolutional_network.py files, which you can find in the [tf-model.zip]((https://github.com/pmservice/wml-sample-models/tree/master/tensorflow/hand-written-digit-recognition/definition) file. This is for [THE MNIST DATABASE of handwritten digits](http://yann.lecun.com/exdb/mnist/)
+You must create a deep learning tensorflow program to train a model. For this, you must use the input_data.py and convolutional_network.py files, which you can find in the tf-model.zip file in this repository. This is for [THE MNIST DATABASE of handwritten digits](http://yann.lecun.com/exdb/mnist/)
 
 In the convolutional_network.py file, there is one part which is important for IBM Watson Machine Learning service to score the model properly. The model should be trained to the RESULT_DIR/model directory after training is complete.
-
 
 ``` shell
 Like before, we prepackage it and keep it in object store, and ask users to download it to their machine
