@@ -76,13 +76,48 @@ In this step we create a sample deep learning tensorflow program to train a mode
 In the convolutional_network.py file, there is one part which is important for IBM Watson Machine Learning service to score the model properly. The model should be trained to the RESULT_DIR/model directory after training is complete.
 
 ``` shell
-Like before, we prepackage it and keep it in object store, and ask users to download it to their machine
+zip tf-model.zip convolutional_network.py input_data.py
+
 ``` 
 
 ### 3.2 Create a Training Run Manifest File
 
+Create 
 ``` shell
-Like before, we pre create it and keep it in object store, and ask users to download it to their machine
+model_definition:
+  name: tf-mnist-showtest1
+  author:
+    name: DL Developer
+    email: dl@example.com
+  description: Simple MNIST model implemented in TF
+  framework:
+    name: tensorflow
+    version: 1.2
+  execution:
+    command: python3 convolutional_network.py --trainImagesFile ${DATA_DIR}/train-images-idx3-ubyte.gz
+      --trainLabelsFile ${DATA_DIR}/train-labels-idx1-ubyte.gz --testImagesFile ${DATA_DIR}/t10k-images-idx3-ubyte.gz
+      --testLabelsFile ${DATA_DIR}/t10k-labels-idx1-ubyte.gz --learningRate 0.001
+      --trainingIters 20000
+    compute_configuration:
+      name: small
+training_data_reference:
+  name: training_data_reference_name
+  connection:
+    endpoint_url: "https://s3-api.us-geo.objectstorage.service.networklayer.com"
+    aws_access_key_id: "722432c254bc4eaa96e05897bf2779e2"
+    aws_secret_access_key: "286965ac10ecd4de8b44306288c7f5a3e3cf81976a03075c"
+  source:
+    bucket: training-data
+  type: s3
+training_results_reference:
+  name: training_results_reference_name
+  connection:
+    endpoint_url: "https://s3-api.us-geo.objectstorage.service.networklayer.com"
+    aws_access_key_id: "722432c254bc4eaa96e05897bf2779e2"
+    aws_secret_access_key: "286965ac10ecd4de8b44306288c7f5a3e3cf81976a03075c"
+  target:
+    bucket: training-results
+  type: s3
 ``` 
 
 ## Submit, Monitor and Store a Training RUN (Note: need to download the BX deep learning add-ons)
