@@ -2,7 +2,7 @@
 
 ## Preequisite
 
-Install [Bluemix CLI](https://console.bluemix.net/docs/cli/reference/bluemix_cli/get_started.html#getting-started) and [Machine Learning Plugin]()
+Install [IBM Cloud CLI](https://console.bluemix.net/docs/cli/reference/bluemix_cli/get_started.html#getting-started) and [Machine Learning Plugin]()
 
 ``` shell
 bx plugin install ml_cli_plugin_osx
@@ -46,7 +46,7 @@ List all training-runs successful
  
 ## Provision an Object Storage Instance, and upload training data
 
-Provision an [Object Storage instance](https://console.bluemix.net/catalog/services/cloud-object-storage), and then setup your AWS S3 command line. You then need to upload data in your Object storage. Here we are getting the data sets from [THE MNIST DATABASE
+Provision an [Object Storage instance](https://console.bluemix.net/catalog/services/cloud-object-storage), and then setup your [AWS S3 command line](https://aws.amazon.com/cli/). You then need to upload data in your Object storage. Here we are getting the data sets from [THE MNIST DATABASE
 of handwritten digits](http://yann.lecun.com/exdb/mnist/)
 
 ``` shell
