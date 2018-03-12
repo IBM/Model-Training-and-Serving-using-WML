@@ -156,9 +156,10 @@ bx ml monitor training-runs training-HrlzIHskg
 
 When a training run has completed successfully (or failed) all files written to $RESULT_DIR and the logs from the run should be written to the Cloud Object Storage bucket specified in the setting training_results_reference within the training manifest file, under a folder with the same name as the model id.
 
-### 4.3 Save
+### 4.3 Save the Trained Model
 
 Once a training run has completed successfully, the trained model can be permanently stored into the repository from from where it can be later deployed for scoring. To do this use the command bx ml store training-runs <model-id>:
+
 ``` shell
 bx ml store training-runs training-DOl4q2LkR
 ```
