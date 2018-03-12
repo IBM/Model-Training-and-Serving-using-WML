@@ -46,7 +46,8 @@ List all training-runs successful
  
 ## Provision an Object Storage Instance, and upload training data
 
-Provision an [Object Storage instance](https://console.bluemix.net/catalog/services/cloud-object-storage), and then setup your command line
+Provision an [Object Storage instance](https://console.bluemix.net/catalog/services/cloud-object-storage), and then setup your AWS S3 command line. You then need to upload data in your Object storage. Here we are getting the data sets from [THE MNIST DATABASE
+of handwritten digits](http://yann.lecun.com/exdb/mnist/)
 
 ``` shell
 export AWS_ACCESS_KEY_ID=test
