@@ -15,8 +15,6 @@ bx target -o ORG -s SPACE
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [Model Training and Serving using WML](#model-training-and-serving-using-wml)
-  - [Prerequisite](#prerequisite)
   - [1. Provision your WML instance](#1-provision-your-wml-instance)
     - [1.1 Create an instance of WML service and associated key using BX command line](#11-create-an-instance-of-wml-service-and-associated-key-using-bx-command-line)
     - [1.2 Get your service credentials](#12-get-your-service-credentials)
