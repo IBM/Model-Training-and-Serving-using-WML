@@ -1,8 +1,8 @@
 # Model Training and Serving using WML
 
-## Preequisite
+## Prerequisite
 
-Install [IBM Cloud CLI](https://console.bluemix.net/docs/cli/reference/bluemix_cli/get_started.html#getting-started) and [Machine Learning Plugin]()
+Install [IBM Cloud CLI](https://console.bluemix.net/docs/cli/reference/bluemix_cli/get_started.html#getting-started) and [Machine Learning Plugin](). In addition setup your [AWS S3 command line](https://aws.amazon.com/cli/)
 
 ``` shell
 bx plugin install ml_cli_plugin_osx
@@ -46,7 +46,7 @@ List all training-runs successful
  
 ## 2. Provision an Object Storage Instance, and upload Training Data
 
-Provision an [Object Storage instance](https://console.bluemix.net/catalog/services/cloud-object-storage), and then setup your [AWS S3 command line](https://aws.amazon.com/cli/). You then need to upload data in your Object storage. Here we are getting the data sets from [THE MNIST DATABASE of handwritten digits](http://yann.lecun.com/exdb/mnist/)
+Provision an [Object Storage instance](https://console.bluemix.net/catalog/services/cloud-object-storage). You then need to upload data in your Object storage. Here we are getting the data sets from [THE MNIST DATABASE of handwritten digits](http://yann.lecun.com/exdb/mnist/)
 
 ``` shell
 export AWS_ACCESS_KEY_ID=test
