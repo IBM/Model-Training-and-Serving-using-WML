@@ -44,7 +44,7 @@ OK
 List all training-runs successful
  ```
  
-## 2. Provision an Object Storage Instance, and upload training data
+## 2. Provision an Object Storage Instance, and upload Training Data
 
 Provision an [Object Storage instance](https://console.bluemix.net/catalog/services/cloud-object-storage), and then setup your [AWS S3 command line](https://aws.amazon.com/cli/). You then need to upload data in your Object storage. Here we are getting the data sets from [THE MNIST DATABASE of handwritten digits](http://yann.lecun.com/exdb/mnist/)
 
@@ -69,7 +69,7 @@ aws --endpoint-url=http://s3-api.us-geo.objectstorage.softlayer.net s3 ls s3://t
 ``` 
 
 ## 3. Create your Model Training Run
-### 3.1 Create Deep Learning Model program and put them in a zip file
+### 3.1 Create Deep Learning Model Program and put them in a Zip file
 
 In this step we create a sample deep learning tensorflow program to train a model. For this, you must use the input_data.py and convolutional_network.py files, which you can find in the tf-model.zip file in this repository. This is for [THE MNIST DATABASE of handwritten digits](http://yann.lecun.com/exdb/mnist/)
 
@@ -120,12 +120,40 @@ training_results_reference:
   type: s3
 ``` 
 
-## Submit, Monitor and Store a Training RUN (Note: need to download the BX deep learning add-ons)
+## 4. Submit, Monitor and Store a Training Run
+
+### 4.1 Submit
+
+Submit Training Run
 ``` shell
 bx ml train tf-model.zip tf-train.yaml
-bx ml list training-runs
-bx ml show training-runs training-DOl4q2LkR
-bx ml monitor training-runs training-DOl4q2LkR
 ``` 
-## Deploy and Serve Models
+
+### 4.2 Monitor
+
+Monitor Training Run
+
+``` shell
+bx ml list training-runs
+bx ml show training-runs training-HrlzIHskg
+``` 
+Sample Output
+``` shell
+Fetching the training runs details with MODEL-ID 'training-HrlzIHskg' ...
+ModelId        training-HrlzIHskg
+url            /v3/models/training-HrlzIHskg
+Name           tf-mnist-showtest1
+State          running
+Submitted_at   2017-11-17T17:01:39Z
+OK
+Show trained-runs details successful
+``` 
+To continously monitor the logs logs of Training Run
+
+``` shell
+bx ml monitor training-runs training-HrlzIHskg
+```
+
+
+## 5. Deploy and Serve Models
 
