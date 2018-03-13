@@ -28,7 +28,7 @@ bx target -o ORG -s SPACE
   - [3.2 Create a Training Run Manifest File](#32-create-a-training-run-manifest-file)
 
 [4. Submit, Monitor and Store a Training Run](#4-submit-monitor-and-store-a-training-run)
-  - [4.1 Submit](#41-submit)
+ - [4.1 Submit](#41-submit)
   - [4.2 Monitor](#42-monitor)
   - [4.3 Save the Trained Model](#43-save-the-trained-model)
 
