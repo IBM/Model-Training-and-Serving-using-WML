@@ -15,22 +15,26 @@ bx target -o ORG -s SPACE
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-  - [1. Provision your WML instance](#1-provision-your-wml-instance)
-    - [1.1 Create an instance of WML service and associated key using BX command line](#11-create-an-instance-of-wml-service-and-associated-key-using-bx-command-line)
-    - [1.2 Get your service credentials](#12-get-your-service-credentials)
-    - [1.3 Set the Machine Learning plugin it up with your creds obtained in step 2](#13-set-the-machine-learning-plugin-it-up-with-your-creds-obtained-in-step-2)
-    - [1.4 Test your WML instance](#14-test-your-wml-instance)
-  - [2. Provision an Object Storage Instance, and upload Training Data](#2-provision-an-object-storage-instance-and-upload-training-data)
-  - [3. Create your Model Training Run](#3-create-your-model-training-run)
-    - [3.1 Create Deep Learning Model Program and put them in a Zip file](#31-create-deep-learning-model-program-and-put-them-in-a-zip-file)
-    - [3.2 Create a Training Run Manifest File](#32-create-a-training-run-manifest-file)
-  - [4. Submit, Monitor and Store a Training Run](#4-submit-monitor-and-store-a-training-run)
-    - [4.1 Submit](#41-submit)
-    - [4.2 Monitor](#42-monitor)
-    - [4.3 Save the Trained Model](#43-save-the-trained-model)
-  - [5. Deploy and Serve Models](#5-deploy-and-serve-models)
-    - [5.1 Deploy stored model to WML](#51-deploy-stored-model-to-wml)
-    - [5.2 Score the deployed model.](#52-score-the-deployed-model)
+[1. Provision your WML instance](#1-provision-your-wml-instance)
+  - [1.1 Create an instance of WML service and associated key using BX command line](#11-create-an-instance-of-wml-service-and-associated-key-using-bx-command-line)
+  - [1.2 Get your service credentials](#12-get-your-service-credentials)
+  - [1.3 Set the Machine Learning plugin it up with your creds obtained in step 2](#13-set-the-machine-learning-plugin-it-up-with-your-creds-obtained-in-step-2)
+  - [1.4 Test your WML instance](#14-test-your-wml-instance)
+
+[2. Provision an Object Storage Instance, and upload Training Data](#2-provision-an-object-storage-instance-and-upload-training-data)
+
+[3. Create your Model Training Run](#3-create-your-model-training-run)
+  - [3.1 Create Deep Learning Model Program and put them in a Zip file](#31-create-deep-learning-model-program-and-put-them-in-a-zip-file)
+  - [3.2 Create a Training Run Manifest File](#32-create-a-training-run-manifest-file)
+
+[4. Submit, Monitor and Store a Training Run](#4-submit-monitor-and-store-a-training-run)
+  - [4.1 Submit](#41-submit)
+  - [4.2 Monitor](#42-monitor)
+  - [4.3 Save the Trained Model](#43-save-the-trained-model)
+
+[5. Deploy and Serve Models](#5-deploy-and-serve-models)
+  - [5.1 Deploy stored model to WML](#51-deploy-stored-model-to-wml)
+  - [5.2 Score the deployed model.](#52-score-the-deployed-model)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
